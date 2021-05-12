@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+ 
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">M@nya0404</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/e-commerce?useSSL=false&amp;autoReconnec=true</property>
+        <property name="show_sql">false</property>
+        <property name="format_sql">false</property>
+        <mapping class="co.admis.model.Admin"/>
+        <mapping class="co.admis.model.Address"/>
+        <mapping class="co.admis.model.Customer"/>
+        <mapping class="co.admis.model.Product"/>
+        <mapping class="co.admis.model.Cart"/>
+        <mapping class="co.admis.model.Wishlist"/>
+        <mapping class="co.admis.model.ProductImage"/>
+        <mapping class="co.admis.model.ProductRating"/>
+        <mapping class="co.admis.model.ProductFAQ"/>
+        <mapping class="co.admis.model.Order"/>
+        <mapping class="co.admis.model.OrderAddress"/>
+        <mapping class="co.admis.model.OrderItem"/>
+        <mapping class="co.admis.model.OrderStatus"/>
+    </session-factory>
+</hibernate-configuration>
