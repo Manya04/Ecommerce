@@ -168,7 +168,7 @@ public class ProductDaoImpl implements ProductDao{
     
     @Override
     public AmazonS3 getAmazonS3Client() {
-        AmazonS3 s3 = new AmazonS3Client(new BasicAWSCredentials("AKIATWSGXYGGNEZX7KDN" , "ceqbV+jK7fdDR0blEnlEZJoqrKlX2zHrdcUBT5+2"));
+        AmazonS3 s3 = new AmazonS3Client(new BasicAWSCredentials("" , ""));
         return s3;
     }
     
